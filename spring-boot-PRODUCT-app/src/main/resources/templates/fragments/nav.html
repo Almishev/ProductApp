@@ -1,0 +1,37 @@
+<style xmlns:th="http://www.w3.org/1999/xhtml">
+
+
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary" xmlns:th="http://www.w3.org/1999/xhtml" style="border-bottom: 1px solid black; position: sticky; top: 5px;">
+    <div class="container-fluid">
+        <a class="navbar-brand nav-link fw-bold" th:href="@{/}" style="margin-left: 40px;">Hand Store Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll" style="margin-left: 250px">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px; font-size:18px; font-weight: bold;">
+                <li class="nav-item" style="margin-left: 10px">
+                    <a class="nav-link"  th:href="@{/home}" tabindex="-1" aria-disabled="true">Add product</a>
+                </li>
+                <li class="nav-item" style="margin-left: 10px">
+                    <a class="nav-link"  th:href="@{/product/show}" tabindex="-1" aria-disabled="true">Products</a>
+                </li>
+
+                <li class="nav-item" style="margin-left: 10px">
+                    <a class="nav-link"  th:href="@{/orders/new}" tabindex="-1" aria-disabled="true">Make order</a>
+                </li>
+                <li class="nav-item" style="margin-left: 10px">
+                    <a class="nav-link"  th:href="@{/orders}" tabindex="-1" aria-disabled="true">Show orders</a>
+                </li>
+                <li class="nav-item" style="margin-left: 10px">
+                    <a class="nav-link" th:href="@{/register}" tabindex="-1" aria-disabled="true">Register</a>
+                </li>
+                <li class="nav-item" style="margin-left: 10px">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Login</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
